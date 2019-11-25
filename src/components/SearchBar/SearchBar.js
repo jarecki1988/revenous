@@ -15,7 +15,9 @@ class SearchBar extends React.Component {
       term: '',
       location: '',
       sortBy: 'best_match',
-    }
+    };
+    this.handleTermChange = this.handleTermChange.bind(this);
+    this.handleLocationChange = this.handleLocationChange.bind(this);
   }
   getSortByClass(sortByOption) {
     if(sortByOption === this.state.sortBy) {

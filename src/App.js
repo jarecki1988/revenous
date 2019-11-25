@@ -26,8 +26,8 @@ class App extends React.Component {
   return (
   <div className='App'>
   <h1>ravenous</h1>
-    <SearchBar/>
-    <BusinessList businesses={businesses}/>
+    <SearchBar searchYelp={this.searchYelp} />
+    <BusinessList businesses={businesses} />
 </div>
   )
  }
